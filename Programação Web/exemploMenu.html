@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo menu</title>
+    <style>
+        @media screen and (max-width: 450px) {
+            .menuVertical {
+                display: block;
+            }
+            .menuHorizontal {
+                display: none;
+            }
+        }
+        @media screen and (min-width: 451px) {
+            .menuVertical {
+                display: none;
+            }
+            .menuHorizontal {
+                display: block;
+            }
+        }
+        nav {
+            background-color: aqua;
+            padding: 10px;
+        }
+        nav li {
+            list-style: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            padding: 5px;
+        }
+        nav a {
+            color: gray;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: darkgray;
+        }
+        .menuPrincipal > li {
+            display: inline-block;
+            padding-right: 10px;
+        }
+        .subMenu {
+            display: none;
+            background-color: lightskyblue;
+            position: fixed;
+            padding: 5px;
+            margin: 0;
+        }
+        .menuPrincipal > li:hover .subMenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>Cabeçalho</header>
+    <nav class="menuVertical">
+        <menu>
+            <li>Opção 1</li>
+            <li>Opção 2</li>
+            <li>Opção 3</li>
+            <li>Opção 4</li>
+        </menu>
+    </nav>
+    <nav class="menuHorizontal">
+        <menu class="menuPrincipal">
+            <li><a href="">Opção 1</a></li>
+            <li><a href="">Opção 2</a>
+                <menu class="subMenu">
+                    <li><a href="">Opção 2.1</a></li>
+                    <li><a href="">Opção 2.2</a></li>
+                </menu>
+            </li>
+            <li><a href="">Opção 3</a>
+                <menu class="subMenu">
+                    <li><a href="">Opção 3.1</a></li>
+                </menu>
+            </li>
+            <li><a href="">Opção 4</a></li>
+        </menu>
+    </nav>
+    <main>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+    </main>
+    <footer>Rodapé</footer>
+</body>
+</html>

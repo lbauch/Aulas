@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/default2.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>Cabeçalho da página</header>
+    <nav>
+        <menu>
+            <li><a href="index2.html"><span class="material-symbols-outlined">home</span>Home</a></li>
+            <li><span class="material-symbols-outlined">add</span>Cadastro</li>
+        </menu>
+    </nav>
+    <main>
+        <form action="" method="get">
+            <label for="login">Login:</label>
+            <input type="text" name="login" id="login" placeholder="Informe o seu login" maxlength="15" autofocus required><br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="Informe sua senha" required><br>
+            <input type="text" name="campo1" value="CAMPO1" readonly>
+            <input type="text" name="campo2" value="CAMPO2" disabled>
+            <input type="hidden" name="campo3" value="escondido">
+            <br>
+            <input type="number" name="idade" placeholder="Informe a idade" min="10" max="90">
+            <label for="novoUsuario">Novo usuário?</label>
+            <input type="checkbox" name="novoUsuario" id="novoUsuario" value="S" checked><br>
+
+            <label for="cidade1">Blumenau</label>
+            <input type="radio" name="cidade" id="cidade1" value="BNU">
+            <label for="cidade2">Gaspar</label>
+            <input type="radio" name="cidade" id="cidade2" value="GSP" checked>
+            <label for="cidade3">Indaial</label>
+            <input type="radio" name="cidade" id="cidade3" value="IND"><br>
+            <label for="dtNascimento">Data nascimento:</label>
+            <input type="date" name="dtNascimento" id="dtNascimento"><br>
+            <label for="dtCompleto">Data completa:</label>
+            <input type="datetime-local" name="dtCompleto" id="dtCompleto">
+            <input type="range" name="exemplorange" id=""><br>
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <option value="PR">Paraná</option>
+                <option value="SC" selected>Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </select><br>
+            <label for="paragrafo">Parágrafo:</label>
+            <textarea name="paragrafo" id="paragrafo" cols="30" rows="10">Exemplo do parágrafo</textarea><br>
+            <label for="arquivo">Arquivo:</label>
+            <input type="file" name="arquivo" id="arquivo">
+
+
+            <br><input type="reset" value="Apagar"><input type="submit" value="Enviar">
+        </form>
+        <p>&nbsp;</p>
+    </main>
+    <footer>Rodapé da página</footer>
+</body>
+</html>

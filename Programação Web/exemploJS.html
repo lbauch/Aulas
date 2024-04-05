@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo JS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/lib.js"></script>
+    <script>
+        var x = 5;
+        y = 6;
+        z = x + y;
+        //Operadores lógicos > < >= <= !=
+        if (x > y) {
+            console.log('x é maior que y!');
+        } else {
+            console.log('x é menor que y!');
+        }
+
+        //Operadores lógicos: && - AND || - OR ! - NOT
+        if ((y > x) && (z > y)) {
+            console.log('Ambas as condições são true!');
+        }
+
+        if ((x > y) || (z > y)) {
+            console.log('Uma das condições é true!');
+        }
+
+        if (!(x > y)) {
+            console.log('Condição foi invertida para true!');
+        }
+
+        var1 = 5;
+        var2 = "5";
+        //Operadores lógicos parte 2 - == === != !==
+        if (var1 == var2) {
+            console.log('var1 é igual a var2!');
+
+            if (var1 === var2) {
+                console.log('var1 e var2 são do mesmo tipo');
+            } else {
+                console.log('var1 e var2 são de tipos diferentes!');
+            }
+        }
+
+        //Operador ternário
+        var3 = (var1 === var2) ? "São iguais" : "São diferentes";
+
+        //Ocorre erro pois o elemento #div1 ainda não foi criado
+        //document.getElementById('div1').innerHTML = "Altera valor inicial";
+    </script>
+</head>
+<body>
+    <main>
+        <h3>Exemplo JavaScript</h3>
+        <section>
+            <button onclick="minhaFuncao()">Chama minhaFuncao</button>
+            <button onclick="outraFuncao('Esse é outro alerta')">Chama outraFuncao</button>
+            <button onclick="alteraDiv()">Altera conteúdo DIV</button>
+        </section>
+        <div id="div1">Essa é uma DIV</div>
+        <div><button onclick="alteraBG()">Altera cor de fundo</button><br>
+            <button onclick="ativaSucesso()">Ativa sucesso</button>
+            <button onclick="ativaErro()">Ativa erro</button>
+            <button onclick="ativaCuidado()">Ativa cuidado</button>
+        </div>
+        <div id="mensagem" style="border: 1px solid black; height: 100px;">Mensagem a ser mostrada.</div>
+        <div>
+            <button onclick="setInfo()">Seta informação</button>
+            <button onclick="delInfo()">Remove informação</button>
+        </div>
+
+    </main>
+    <script>
+        var x = "Marcos";
+        a = x + y;
+        x = "3";
+        b = x + y;
+        // + - * / % (resto divisão) ** (exponenciação)
+
+        //Exemplo laço FOR
+        for(i = 0; i <= 3; i++) {
+            console.log('Valor de i é '+i);
+        }
+
+        //Exemplo de laço WHILE
+        i = 0;
+        while (i <= 3) {
+            console.log('Valor de i é '+i);
+            i++;
+        }
+
+        var vetor = [0, 1, 2, 3];
+        var vetor2 = [0, "Marcos", true, { nome: "Marcos" }];
+    </script>
+</body>
+</html>

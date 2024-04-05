@@ -1,0 +1,14 @@
+.sucesso {
+    background-color: lightgreen;
+    text-align: center;
+}
+
+.erro {
+    background-color: lightcoral;
+    text-align: left;
+}
+
+.cuidado {
+    background-color: yellow;
+    text-align: right;
+}
